@@ -1,0 +1,25 @@
+.flexRowContent--row-datos{
+    background-color: #bd1616;
+}
+
+
+.flexRowContent--row-desktop{
+    background-color: #f1ebeb;
+}
+
+.flexRow--row-menu{
+    background-color:#fff;
+}
+
+.flexRow--row-desktop{
+    background-color: #f1ebeb;
+}
+
+.flexRow--footer-class{
+    background-color: #000;
+}
+
+.flexColChild--colHome{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,323 @@
+{
+  "store.product": {
+    "children": [
+      "condition-layout.product#cond1"
+    ]
+  },
+
+  "condition-layout.product#cond1":{
+    "props":{
+      "conditions":[{
+        "subject": "productId",
+        "arguments":{
+          "id": 1
+        }
+      }],
+      "Then": "flex-layout.row#secondario",
+      "Else": "flex-layout.row#principal"
+    }
+  },
+
+  "flex-layout.row#secondario":{
+    "children":[
+      "image#imgG"
+    ]
+  },
+
+  // "condition.product#greinera":{
+  //   "props":{
+  //     "conditions":[{
+  //       "subject": "product",
+  //       "verb": "is",
+  //       "object": "1"
+  //     }]
+  //   },
+  //   "children":[
+  //     "image#imgG"
+  //   ]
+  // },
+
+  "image#imgG":{
+    "props": {
+      "src":"https://www.privarsa.com.mx/wp-content/uploads/Conectores-baffles-y-ensambles.jpg"   
+    }
+  },
+
+  "flex-layout.row#principal":{
+    "props":{
+      "border": "all",
+      "borderWidth": 2,
+      "borderColor": "blue"
+    },
+
+    "children":[
+      "flex-layout.col#left",
+      "flex-layout.col#right"
+    ]
+  },
+
+  "flex-layout.col#left":{
+    "props":{
+
+    },
+    "children":[
+      "product-images"
+    ]
+  },
+  
+  "flex-layout.col#right":{
+    "props":{
+
+    },
+    "children":[
+      "product-brand",
+      "product-name",
+      "product-price",
+      "flex-layout.row#1",
+
+      "product-identifier.product",
+      "flex-layout.row#2",
+      "sku-selector",
+
+      "flex-layout.row#3",
+      "flex-layout.row#4",
+      "flex-layout.row#5",
+      "flex-layout.row#6"
+    ]
+  },
+
+
+  "flex-layout.row#1":{
+    "props":{
+
+    },
+
+    "children":[
+      "flex-layout.col",
+      "flex-layout.col#11"
+    ]
+  },
+
+  "flex-layout.col#11":{
+    "props":{
+
+    },
+    "children":[
+      "product-quantity"
+    ]
+  },
+
+  "flex-layout.row#2":{
+    "props":{
+
+    },
+
+    "children":[
+      "flex-layout.col",
+      "flex-layout.col#21"
+    ]
+  },
+
+  "flex-layout.col#21":{
+    "props":{
+
+    },
+    "children":[
+      "share"
+    ]
+  },
+
+  "flex-layout.row#3":{
+    "props":{
+
+    },
+
+    "children":[
+      "flex-layout.col#30",
+      "flex-layout.col#31",
+      "flex-layout.col#32"
+    ]
+  },
+
+  "flex-layout.col#30":{
+    "props":{
+      "horizontalAlign": "center"
+    },
+    "children":[
+      "add-to-cart-button"
+    ]
+  },
+
+  "flex-layout.col#31":{
+    "props":{
+      "horizontalAlign": "center"
+    },
+    "children":[
+      "add-to-cart-button"
+    ]
+  },
+
+  "flex-layout.col#32":{
+    "props":{
+      "horizontalAlign": "center"
+    },
+    "children":[
+      "buy-button"
+    ]
+  },
+
+  "add-to-cart-button":{
+    "props":{
+      "text": "Mandar al carrito"
+    }
+  },
+
+  "buy-button":{
+    "props":{
+      "text": "Compre ahora",
+      "isOneClickBuy": true
+    }
+  },
+
+  "flex-layout.row#4":{
+    "props":{
+
+    },
+
+    "children":[
+      "flex-layout.col#40",
+      "flex-layout.col#41"
+    ]
+  },
+
+  "flex-layout.col#40":{
+    "props":{
+      "width":"20%"
+    },
+    "children":[
+    ]
+  },
+
+  "flex-layout.col#41":{
+    "props":{
+
+    },
+    "children":[
+      "rich-text#1",
+      "rich-text#11"
+    ]
+  },
+  
+  "rich-text#1": { 
+    "props": { 
+      "text": "Pagos Seguros",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass": "productoEncabezado"
+    }
+  },
+
+  "rich-text#11": { 
+    "props": { 
+      "text": "No almacenamos los detalles de la tarjeta de crédito ni tenemos acceso a la información de su tarjeta de crédito.",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass": "producto"
+    }
+  },
+
+  "rich-text#2": { 
+    "props": { 
+      "text": "Envíos gratuitos",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass": "productoEncabezado"
+    }
+  },
+
+  "rich-text#22": { 
+    "props": { 
+      "text": "Envíos gratuitos a toda la república en pedidos superiores a $250 USD.",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass": "producto"
+    }
+  },
+
+  "rich-text#3": { 
+    "props": { 
+      "text": "Servicio al cliente",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass": "productoEncabezado"
+    }
+  },
+
+  "rich-text#33": { 
+    "props": { 
+      "text": "Nuestros agentes están para apoyarte vía chat. Horarios: Lunes a viernes 9 am a 6 pm.",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass": "producto"
+    }
+  },
+
+  "flex-layout.row#5":{
+    "props":{
+
+    },
+
+    "children":[
+      "flex-layout.col#50",
+      "flex-layout.col#51"
+    ]
+  },
+
+  "flex-layout.col#50":{
+    "props":{
+      "width":"20%"
+    },
+    "children":[
+    ]
+  },
+
+  "flex-layout.col#51":{
+    "props":{
+
+    },
+    "children":[
+      "rich-text#2",
+      "rich-text#22"
+    ]
+  },
+
+  "flex-layout.row#6":{
+    "props":{
+
+    },
+
+    "children":[
+      "flex-layout.col#60",
+      "flex-layout.col#61"
+    ]
+  },
+
+  "flex-layout.col#60":{
+    "props":{
+      "width":"20%"
+    },
+    "children":[
+    ]
+  },
+
+  "flex-layout.col#61":{
+    "props":{
+
+    },
+    "children":[
+      "rich-text#3",
+      "rich-text#33"
+    ]
+  }
+
+}

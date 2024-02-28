@@ -1,0 +1,482 @@
+{
+  "store.home": { 
+    "blocks": [
+      "responsive-layout.desktop",
+      "responsive-layout.mobile"
+    ]
+  },
+
+  "responsive-layout.desktop":{
+    "children":[
+      "flex-layout.row#Hdesktop"
+    ]
+  },
+
+  "responsive-layout.mobile":{
+    "children":[
+      "flex-layout.row#Hmobile"
+    ]
+  },
+
+  "flex-layout.row#Hdesktop":{
+    "props":{
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children":[
+      "flex-layout.col#col1"
+    ]
+  },
+
+  "flex-layout.col#col1":{
+    "props":{
+      "blockClass":"colHome"
+    },
+    "children":[
+      "stack-layout",
+      "tab-layout#D",
+      "list-context.product-list#product-slider",
+      "rich-text#buscado",
+      "rich-text#marcas",
+      "slider-layout#Nmarcas",
+      "rich-text#nuevo",
+      "info-card#HDesktop",
+      "info-card#nueva"
+    ]
+  },
+
+  "flex-layout.row#Hmobile":{
+    "props":{
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children":[
+      "flex-layout.col#col2"
+    ]
+  },
+
+  "flex-layout.col#col2":{
+    "props":{
+      "blockClass":"colHome"
+    },
+    "children":[
+      "tab-layout#M",
+      "list-context.product-list#product-slider",
+      "rich-text#buscado",
+      "rich-text#marcas",
+      "slider-layout#Nmarcas",
+      "rich-text#nuevo",
+      "info-card#HMobile",
+      "info-card#nuevaMobile"
+    ]
+  },
+
+  //Globales
+  
+  "stack-layout": {
+    "props":{
+
+    },
+    "children": ["image#imgL", "flex-layout.row#link"]
+  },
+
+  "flex-layout.row#link":{
+    "props":{
+      "horizontalAlign": "center",
+      "verticalAlign": "center"
+    },
+    "children":[
+      "link#visita"
+    ]
+  },
+
+  "link#visita":{
+    "props": {
+      "href": "https://www.google.com.mx",
+      "label": "Google",
+      "displayMode": "button",
+      "blockClass": "linkButton"
+    }
+  },
+
+  "image#imgL":{
+    "props": {
+      "widt": "100%",
+      "height": "400px",
+      "src":"https://www.privarsa.com.mx/wp-content/uploads/Conectores-baffles-y-ensambles.jpg",
+      "blockClass": "imgFondo"
+    }
+  },
+
+  "list-context.product-list#product-slider":{
+    "blocks": ["product-summary.shelf#producto"],
+    "children": ["slider-layout#producto"]
+  },
+
+  "product-summary.shelf#producto":{
+    "props":{
+      "blockClass":"home-product-slider"
+    },
+    "children":[
+      "product-summary-image",
+      "product-summary-brand",
+      "product-summary-name",
+      "product-summary-price",
+      "product-summary-buy-button#b1"
+    ]
+  },
+
+  "product-summary-buy-button#b1":{
+    "props":{
+      "buyButtonText": "Compra ahora"
+    }
+  },
+
+  "slider-layout#producto": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": false,
+      "fullwidth": true,
+      "showPaginationDots": true,
+      "showNavigationArrows": true,
+      "blockClass": "product-slider"
+    }
+  },
+
+  "slider-layout#Nmarcas": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      //"showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    },
+    "children": [
+      "image#img11",
+      "image#img21",
+      "image#img31",
+      "image#img41",
+      "image#img51",
+      "image#img61",
+      "image#img71",
+      "image#img81",
+      "image#img91",
+      "image#img101"
+    ]
+  },
+
+  "image#img11":{
+    "props": {
+      "src":"https://privarsa.vtexassets.com/assets/vtex/assets-builder/privarsa.b2bstore-privarsa/0.0.8/marcas/3dfactory___2c02d8d8bcf8d87d05726d15e3c598b9.webp"
+    
+    }
+  },
+
+  "image#img21":{
+    "props": {
+      "src":"https://privarsa.vtexassets.com/assets/vtex/assets-builder/privarsa.b2bstore-privarsa/0.0.8/marcas/logos/AHPMerkle___a74e8aac6071eedc87c87c390b4ab749.png"
+    }
+  },
+
+  "image#img31":{
+    "props": {
+      "src":"https://privarsa.vtexassets.com/assets/vtex/assets-builder/privarsa.b2bstore-privarsa/0.0.8/marcas/logos/BrixiaPlast___8aeddfb3355d1e6bdbdd972a17ee27ae.png"
+    }
+  },
+
+  "image#img41":{
+    "props": {
+      "src":"https://privarsa.vtexassets.com/assets/vtex/assets-builder/privarsa.b2bstore-privarsa/0.0.8/marcas/logos/Codipro___e603884f473836c4fde0b8beb2798e3b.png"
+    }
+  },
+
+  "image#img51":{
+    "props": {
+      "src":"https://privarsa.vtexassets.com/assets/vtex/assets-builder/privarsa.b2bstore-privarsa/0.0.8/marcas/logos/Laserpoint___34cb1eaf93e7aa86e65e305ef41b5797.png"
+    }
+  },
+
+  "image#img61":{
+    "props": {
+      "src":"https://privarsa.vtexassets.com/assets/vtex/assets-builder/privarsa.b2bstore-privarsa/0.0.8/marcas/logos/PMC_Plus___260296905f3d8a9f27ad20ccbf9e3f8a.png"
+    }
+  },
+
+  "image#img71":{
+    "props": {
+      "src":"https://privarsa.vtexassets.com/assets/vtex/assets-builder/privarsa.b2bstore-privarsa/0.0.8/marcas/logos/FISA___ecd63a95a5464456c2571fa219a8ef91.png"
+    }
+  },
+
+  "image#img81":{
+    "props": {
+      "src":"https://privarsa.vtexassets.com/assets/vtex/assets-builder/privarsa.b2bstore-privarsa/0.0.8/marcas/logos/FPServices___dfa03b66bd94a5d72f1b27755fcea1a1.png"
+    }
+  },
+
+  "image#img91":{
+    "props": {
+      "src":"https://privarsa.vtexassets.com/assets/vtex/assets-builder/privarsa.b2bstore-privarsa/0.0.8/marcas/logos/INCOE___aea64d7886e87a2b56a4feb2c20286bc.png"
+    }
+  },
+
+  "image#img101":{
+    "props": {
+      "src":"https://privarsa.vtexassets.com/assets/vtex/assets-builder/privarsa.b2bstore-privarsa/0.0.8/marcas/logos/Misumi___e861fd77b4b1c9e5cacb3254f6901c6a.png"
+    }
+  },
+
+
+  "rich-text#buscado": { 
+    "props": { 
+      "text": "Lo mas buscado",
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "blockClass": "confondo"
+    }
+  },
+
+  "rich-text#marcas": { 
+    "props": { 
+      "text": "Nuestas marcas",
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "blockClass": "sinfondo"
+    }
+  },
+
+  "rich-text#nuevo": { 
+    "props": { 
+      "text": "Lo más nuevo",
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "blockClass": "confondo"
+    }
+  },
+
+
+  //Desktop
+
+  "tab-layout#D":{
+    "children":[	
+      "tab-list",
+      "tab-content"
+    ]
+  },
+
+  "tab-list":{
+    "children":[
+      "tab-list.item#1",
+      "tab-list.item#2"
+    ]
+  },
+
+  "tab-content":{
+    "children":[
+      "tab-content.item#1",
+      "tab-content.item#2"
+    ]
+  },
+
+  "tab-list.item#1":{
+    "props":{
+      "tabId": "P1",
+      "label": "Pestaña 1",
+      "defaultActiveTab": true
+    }
+  },
+
+  "tab-list.item#2":{
+    "props":{
+      "tabId": "P2",
+      "label": "Pestaña 2"
+    }
+  },
+
+  "tab-content.item#1":{
+    "props":{
+      "tabId": "P1"
+    },
+    "children":[
+      "video#P1D"
+    ]
+  },
+
+  "tab-content.item#2":{
+    "props":{
+      "tabId": "P2"
+    },
+    "children":[
+      "video#P2D"
+    ]
+  },
+
+  "video#P1D": {
+    "props": {
+      "width": "100%",
+      "height": "600px",
+      "loop": false,
+      "autoPlay": false,
+      "muted": false,
+      "src": "https://youtu.be/W-gvMyhGWCU",
+      "blockClass": "videoEl"
+    }
+  },
+
+  "video#P2D": {
+    "props": {
+      "width": "100%",
+      "height": "600px",
+      "loop": false,
+      "autoPlay": false,
+      "muted": false,
+      "src": "https://www.youtube.com/watch?v=W4bbToHMHrM",
+      "blockClass": "videoEl"
+    }
+  },
+
+  "info-card#HDesktop": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://privarsa.vtexassets.com/assets/vtex/assets-builder/privarsa.b2bstore-privarsa/0.0.8/logos/Logo-Privarsa-1___531eda977635168aeea4ef41d82c58f3.png",
+      "subhead": "¡NUEVO PRODUCTO! <br><br> Incrementa tu productividad con la solución de limpieza criogénica más compacta del mercado. Máquinas de limpieza para moldes y placas con hielo seco sin humedad y sin productos químicos agresivos. Limpia, ecológica y práctica, ¿Requieres limpiar tusmoldes de inyección? ¡Dry Ice es para ti!.",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "callToActionMode": "none",
+      "blockClass": "info-card-example",
+      "textAlignment": "left"
+    }
+  },
+  
+  "info-card#nueva": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://privarsa.vtexassets.com/assets/vtex/assets-builder/privarsa.b2bstore-privarsa/0.0.8/logos/Logo-Privarsa-1___531eda977635168aeea4ef41d82c58f3.png",
+      "subhead": "Francisco Garza Sada 2929 <br><br> Chepevera 64030, Monterrey, N.L. <br><br>",
+      "callToActionText": "Sucursales",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+
+  //Mobile
+  "tab-layout#M":{
+    "children":[	
+      "tab-list#M",
+      "tab-content#M"
+    ]
+  },
+
+  "tab-list#M":{
+    "children":[
+      "tab-list.item#1M",
+      "tab-list.item#2M"
+    ]
+  },
+
+  "tab-content#M":{
+    "children":[
+      "tab-content.item#1M",
+      "tab-content.item#2M"
+    ]
+  },
+
+  "tab-list.item#1M":{
+    "props":{
+      "tabId": "P1M",
+      "label": "1",
+      "defaultActiveTab": true
+    }
+  },
+
+  "tab-list.item#2M":{
+    "props":{
+      "tabId": "P2M",
+      "label": "2"
+    }
+  },
+
+  "tab-content.item#1M":{
+    "props":{
+      "tabId": "P1M"
+    },
+    "children":[
+      "video#P1M"
+    ]
+  },
+
+  "tab-content.item#2M":{
+    "props":{
+      "tabId": "P2M"
+    },
+    "children":[
+      "video#P2M"
+    ]
+  },
+
+  "video#P1M": {
+    "props": {
+      "width": "80%",
+      "height": "300px",
+      "loop": false,
+      "autoPlay": false,
+      "muted": false,
+      "src": "https://youtu.be/W-gvMyhGWCU",
+      "blockClass": "videoEl"
+    }
+  },
+
+  "video#P2M": {
+    "props": {
+      "width": "80%",
+      "height": "300px",
+      "loop": false,
+      "autoPlay": false,
+      "muted": false,
+      "src": "https://www.youtube.com/watch?v=W4bbToHMHrM",
+      "blockClass": "videoEl"
+    }
+  },
+
+  "info-card#HMobile": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://privarsa.vtexassets.com/arquivos/ids/155638-500-auto?v=638200281061870000&width=500&height=auto&aspect=true",
+      "subhead": "¡NUEVO PRODUCTO! <br><br> Nuevos productos version mobile.",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "callToActionMode": "none",
+      "blockClass": "info-card-example",
+      "textAlignment": "left"
+    }
+  },
+  
+  "info-card#nuevaMobile": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://privarsa.vtexassets.com/arquivos/ids/261128-500-auto?v=638380942174470000&width=500&height=auto&aspect=true",
+      "subhead": "Francisco Garza Sada 2929 <br><br> Chepevera 64030, Monterrey, N.L. <br><br> Mobile",
+      "callToActionText": "Sucursales",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  }
+
+}

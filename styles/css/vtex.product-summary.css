@@ -1,0 +1,37 @@
+.element--home-product-slider{
+    background-color: #f1ebeb;
+    width: 250px;
+}
+
+.element--home-product-slider .image{
+    margin-bottom: 16px;
+    width: 196px;
+    height: 196px;
+    object-fit: contain;
+}
+
+.element--home-product-slider .productBrandName{
+    color: #c5342f;
+    margin-left: 10px;
+}
+
+.element--home-product-slider .productBrandContainer{
+    text-align: left;
+}
+
+.element--home-product-slider .productBrand{
+    text-align: left;
+}
+
+.element--home-product-slider .nameContainer{
+    text-align: left;
+    margin-left: 10px;
+    justify-content: left;
+}
+
+.element--home-product-slider .buyButton :global(.vtex-button){
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: #c5342f;
+    color: #000;
+}

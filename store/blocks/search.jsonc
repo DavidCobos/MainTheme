@@ -1,0 +1,166 @@
+
+{
+  "store.search": {
+    "blocks": [
+      "search-result-layout"
+    ]
+  },
+ 
+  "search-result-layout":{
+    "blocks":[
+        "search-result-layout.desktop",
+        "search-result-layout.mobile",
+        "search-not-found-layout"
+    ]
+  },
+ 
+  "search-result-layout.desktop":{
+    "children":[
+      "flex-layout.row#migajas",
+      "flex-layout.row#resultados"
+    ]
+  },
+ 
+ 
+  "search-result-layout.mobile":{
+    "children":[
+      "flex-layout.row#migajas",
+      "flex-layout.row#resultadosMobile"
+    ]
+  },
+ 
+ 
+  //global
+  "flex-layout.row#migajas":{
+    "children":[
+      "flex-layout.row#migaja",
+      "flex-layout.row#titulos"
+ 
+    ]
+  },
+ 
+ 
+  "flex-layout.row#resultados":{
+    "children":[
+   
+      "flex-layout.col#filtros",
+      "flex-layout.col#colResultados"
+    ]
+  },
+ 
+  "flex-layout.row#resultadosMobile":{
+    "children":[
+      "flex-layout.col#colResultadosMobil"
+    ]
+  },
+ 
+  "flex-layout.col#filtros":{
+    "children":[
+      "filter-navigator.v3"
+    ]
+   
+  },
+ 
+  "flex-layout.col#colResultados":{
+    "children":[
+     
+      "flex-layout.row#contador",
+      "flex-layout.row#fichasProductos"
+    ]
+   
+  },
+  "flex-layout.col#colResultadosMobil":{
+    "children":[
+     
+      "flex-layout.row#contador",
+      "flex-layout.row#fichasProductos2"
+    ]
+   
+  },
+ 
+  "flex-layout.row#titulos":{
+    "children":[
+      "search-title.v2"
+     
+ 
+     
+    ]
+  },
+ 
+  "flex-layout.row#migaja":{
+    "children":[
+      "breadcrumb.search"
+    ]
+  },
+ 
+  "flex-layout.row#contador":{
+    "children":[
+      "flex-layout.col#contadorProductos",
+      "flex-layout.col#espacioVacio",
+      "flex-layout.col#filtrosRelevancia"
+ 
+    ]
+ 
+  },
+ 
+  "flex-layout.col#contadorProductos":{
+    "children":[
+      "total-products.v2"
+    ]
+  },
+ 
+  "flex-layout.col#espacioVacio":{
+    "props": {
+    "width": "grow"  
+  }
+},
+ 
+"flex-layout.col#filtrosRelevancia":{
+  "children":[
+ 
+  ]
+},
+ 
+"flex-layout.row#fichasProductos":{    
+  "children":[
+     "search-content"
+     //"search-fetch-more"
+  ]
+},
+ 
+"flex-layout.row#fichasProductos2":{    
+  "children":[
+     "search-content#mobile"
+     //"search-fetch-more"
+  ]
+},
+ 
+ 
+"search-content#mobile": {
+  "blocks": ["gallery#mobile", "not-found"]
+},
+ 
+"gallery#mobile": {
+  "blocks": ["product-summary.shelf"],
+  "props": {
+    "layouts": [
+      {
+        "name": "grid",
+        "component": "GridSummary",
+        "itemsPerRow": {
+          "(min-width:1008px)":4,
+          "(min-width:623px) and (max-width:1007px)":3,
+          "(max-width:622px)":2
+        }
+      },
+      {
+        "name": "list",
+        "component": "ListSummary",
+        "itemsPerRow": 1
+      }
+    ],
+    "ListSummary": "product-summary.shelf",
+    "GridSummary": "product-summary.shelf"
+  }
+}
+}

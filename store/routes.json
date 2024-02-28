@@ -1,0 +1,11 @@
+{
+    "store.custom#acerca":{
+        "title":"Acerca de",
+        "path":"/acerca"   
+    },
+
+    "store.custom#categorias":{
+        "title":"Categorias",
+        "path":"/categorias"   
+    }
+}

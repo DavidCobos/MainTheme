@@ -1,0 +1,86 @@
+.paragraph--confondo {
+    font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 50px;
+    color: #000;
+    text-decoration: underline #b22222 4px;
+    padding-left: 7px;
+}
+
+.paragraph--sinfondo {
+    font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 50px;
+    color: #000;
+    text-decoration: underline #b22222 4px;
+    padding-left: 7px;
+}
+
+.container--confondo{
+    background-color: gray;
+}
+
+.container--productoEncabezado{
+    height: 20px;
+}
+
+.paragraph--productoEncabezado{
+    font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+    text-align: left;
+    color: #b22222;
+    font-weight: bold;
+}
+
+.paragraph--producto {
+    font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+    text-align: left;
+}
+
+.paragraph--footer-text-h1 {
+    font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.paragraph--footer-text {
+    font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+
+.paragraph--footer-text-p {
+    font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 10px;
+}
+
+.paragraph--disparador {
+    font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    font-size: 14px;
+    width: 100%;
+}
+
+.paragraph--disparador {
+    font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    font-size: 14px;
+    width: 100%;
+}
+
+.container--disparador {
+    background-color: #000;
+
+}
+

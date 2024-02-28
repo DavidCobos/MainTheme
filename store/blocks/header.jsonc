@@ -1,0 +1,207 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "sticky-layout#desktop"
+    ]
+  },
+  "sticky-layout#desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": [
+      "flex-layout.row#datos",
+      "flex-layout.row#desktop",
+      "flex-layout.row#menu",
+      "flex-layout.row#modalN"
+    ]
+  },
+
+  "modal-trigger#disparador":{
+    "children":[
+      "flex-layout.col#colM",
+      "modal-layout#contenido"
+    ]
+  },
+
+  "flex-layout.row#modalN": {
+    "props": {
+      "fullWidth":true
+    },
+    "children":[
+      "modal-trigger#disparador"
+    ]
+  },
+
+  "flex-layout.col#colM":{
+    "props": {
+      "width":"grow"
+    },
+    "children":[
+      "rich-text#pulsa"
+    ]
+  },
+
+  "modal-layout#contenido":{
+    "children":[
+      "list-context.product-list#product-slider-modal"
+    ]
+  },
+
+  "list-context.product-list#product-slider-modal":{
+    "blocks": ["product-summary.shelf#producto-modal"],
+    "children": ["slider-layout"]
+  },
+
+  "product-summary.shelf#producto-modal":{
+    "props":{
+      "blockClass":"home-product-slider"
+    },
+    "children":[
+      "product-summary-image",
+      //"product-summary-brand",
+      "product-summary-name",
+      //"product-summary-price",
+      "product-summary-buy-button"
+    ]
+  },
+  "rich-text#pulsa":{
+    "props":{
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text":"Conoce nuestros productos mas vendidos",
+      "blockClass":"disparador"
+    }
+  },
+
+  "flex-layout.row#datos": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      
+      "blockClass": "row-datos"
+    }
+  },
+
+  "flex-layout.row#desktop": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      //"fullWidth": true,
+      "blockClass": "row-desktop"
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#spacer",
+      "link#acerca",
+      //"locale-switcher",
+      "login",
+      "minicart.v2"
+    ]
+  },
+
+  "link#acerca":{
+    "props": {
+      "href": "/acerca",
+      "label": "Conoce de nosotros",
+      "displayMode": "button",
+      "blockClass":"btnConoce"
+    }
+  },
+
+  "login": {
+    "props": {
+      "blockClass": "loginButton"
+    }
+  },
+
+  "search-banner#one": {
+    "props": {
+      "horizontalAlignment": "center"
+    }
+  },
+
+  "flex-layout.row#banner-one": {
+    "children": [
+      "search-bar",
+      "search-banner#one"
+    ]
+  },
+
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    },
+    "children":[
+      "flex-layout.row#banner-one"
+    ]
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo"]
+  },
+
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://privarsa.vtexassets.com/assets/vtex/assets-builder/privarsa.b2bstore-privarsa/0.0.8/logos/Logo-Privarsa-1___531eda977635168aeea4ef41d82c58f3.png",
+      "width": "80"
+    }
+  },
+
+  "flex-layout.row#menu":{
+    "props":{
+      "blockClass": "row-menu"
+    },
+    "children":[
+      "category-menu"
+    ]
+  },
+
+  "category-menu": {
+    "props": {
+      "showAllDepartments": true,
+      "showSubcategories": true,
+      "menuDisposition": "center",
+      "departments": [],
+      "sortSubcategories": "name"
+    }
+  },
+
+  "header-layout.mobile": {
+    "children": ["sticky-layout#mobile"]
+  },
+  "sticky-layout#mobile": {
+    "children": ["flex-layout.row#mobile"]
+  },
+  "flex-layout.row#mobile": {
+    "children": [
+      "drawer",
+      "logo",
+      "flex-layout.col#spacer",
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "drawer": {
+    "children": []
+  }
+}

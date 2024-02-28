@@ -1,0 +1,7 @@
+{
+    "store.custom#categorias":{
+        "blocks":[
+            "showCategory"
+        ]
+    }
+}

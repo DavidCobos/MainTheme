@@ -1,0 +1,233 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": { 
+    "children": [
+      "flex-layout.row#footer",
+      "flex-layout.row#copy"
+    ]
+  },
+  "footer-layout.mobile": { 
+    "children": [
+      "flex-layout.row"
+    ]
+  },
+
+  "flex-layout.row#copy": { 
+    "props":{
+      "blockClass":"footer-class"
+    },
+    "children": [
+      "rich-text#copy"
+    ]
+  },
+
+  "rich-text#copy": { 
+    "props": { 
+      "text": "Copyright",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "footer-text-p"
+    }
+  },
+
+  "flex-layout.row#footer": { 
+    "props":{
+      "blockClass":"footer-class"
+    },
+    "children": [
+      "flex-layout.col#Logo",
+      "flex-layout.col#Empresa",
+      "flex-layout.col#Direccion",
+      "flex-layout.col#Redes"
+    ]
+  },
+
+  "flex-layout.col#Logo": { 
+    "props":{
+
+    },
+    "children":[
+      "image#Logo"
+    ]
+  },
+
+  "image#Logo":{
+    "props":{
+      "src": "https://privarsa.vtexassets.com/assets/vtex/assets-builder/privarsa.b2bstore-privarsa/0.0.8/top-bar/Logo-PRIVARSA-Plano-blanco___195d05df0791e0d578c6eaedce4e8459.png"
+    }
+  },
+
+
+  "flex-layout.col#Empresa": { 
+    "children":[
+      "rich-text#empresa",
+      "rich-text#acerca",
+      "rich-text#productos",
+      "rich-text#marca",
+      "rich-text#promo",
+      "rich-text#tyc"
+    ]
+
+  },
+
+  "rich-text#empresa": { 
+    "props": { 
+      "text": "Empresa",
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "blockClass": "footer-text-h1"
+    }
+  },
+
+  "rich-text#acerca": { 
+    "props": { 
+      "text": "Acerca",
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "blockClass": "footer-text"
+    }
+  },
+
+  "rich-text#productos": { 
+    "props": { 
+      "text": "Productos",
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "blockClass": "footer-text"
+    }
+  },
+
+  "rich-text#marca": { 
+    "props": { 
+      "text": "Marcas",
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "blockClass": "footer-text"
+    }
+  },
+
+  "rich-text#promo": { 
+    "props": { 
+      "text": "Promociones",
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "blockClass": "footer-text"
+    }
+  },
+
+  "rich-text#tyc": { 
+    "props": { 
+      "text": "Términos y condiciones",
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "blockClass": "footer-text"
+    }
+  },
+
+
+  "flex-layout.col#Direccion": { 
+    "children":[
+      "rich-text#direccion",
+      "rich-text#dir1",
+      "rich-text#dir2",
+      "rich-text#dir3",
+      "rich-text#tel",
+      "rich-text#correo"
+    ]
+
+  },
+
+  "rich-text#direccion": { 
+    "props": { 
+      "text": "Dirección Matriz",
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "blockClass": "footer-text-h1"
+    }
+  },
+
+  "rich-text#dir1": { 
+    "props": { 
+      "text": "Francisco Garza Sada 2929",
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "blockClass": "footer-text"
+    }
+  },
+
+  "rich-text#dir2": { 
+    "props": { 
+      "text": "Chepevera, 64030",
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "blockClass": "footer-text"
+    }
+  },
+
+  "rich-text#dir3": { 
+    "props": { 
+      "text": "Monterrey, N.L.",
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "blockClass": "footer-text"
+    }
+  },
+
+  "rich-text#tel": { 
+    "props": { 
+      "text": "+52 81 8333 1199",
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "blockClass": "footer-text"
+    }
+  },
+
+  "rich-text#correo": { 
+    "props": { 
+      "text": "ventas@privarza.com.mx",
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "blockClass": "footer-text"
+    }
+  },
+
+  "flex-layout.col#Redes": { 
+    "props":{
+      "verticalAlign": "middle"
+    },
+    "children":[
+      "rich-text#siguenos",
+      "flex-layout.row#redes"
+    ]
+
+  },
+
+  "rich-text#siguenos": { 
+    "props": { 
+      "text": "Síguenos",
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "blockClass": "footer-text-h1"
+    }
+  },
+
+  "flex-layout.row#redes": { 
+    "children":[
+      "social-networks"
+    ]
+
+  },
+
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        { "url": "https://facebook.com/foo", "name": "Facebook"},
+        { "url": "https://facebook.com/foo", "name": "Linkedin"},
+        { "url": "https://twitter.com/foo", "name": "Twitter" },
+        { "url": "https://twitter.com/foo", "name": "Youtube" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.container{
+    color: #600606;
+    border-color: #600606;
+    border: 1px solid;
+    border-radius: 10PX;
+    margin: 10px;
+}
+
+.profile{
+    color: #600606;
+}
