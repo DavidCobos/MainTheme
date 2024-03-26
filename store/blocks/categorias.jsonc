@@ -1,7 +1,17 @@
 {
     "store.custom#categorias":{
         "blocks":[
+            "flex-layout.row#Cdesktop"
+        ]
+    },
+
+    "flex-layout.row#Cdesktop":{
+        "props":{
+          "preventHorizontalStretch": true,
+          "preventVerticalStretch": true
+        },
+        "children":[
             "showCategory"
         ]
-    }
+      }
 }
