@@ -7,11 +7,17 @@
 
     "flex-layout.row#Cdesktop":{
         "props":{
-          "preventHorizontalStretch": true,
-          "preventVerticalStretch": true
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
         },
         "children":[
             "showCategory"
         ]
-      }
+    },
+
+    "showCategory":{
+        "props":{
+            "itemsLarge": 3
+        }
+    }
 }
